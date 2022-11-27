@@ -38,7 +38,7 @@ public class TestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TestApplication.class, args);
 		test();
-		System.out.println("test_workflow");
+		System.out.println("Test_workflow");
 	}
 
 
