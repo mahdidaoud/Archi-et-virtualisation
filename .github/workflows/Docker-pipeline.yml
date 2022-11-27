@@ -25,7 +25,7 @@ jobs :
         run : mvn clean install
 
       - name : Build the Docker Image
-        run : docker build . --file Dockerfile --tag virtualisation/docker:${GITHUB_SHA::8}
+        run : docker build . --file Dockerfile --tag mahdidaoud1/docker:${GITHUB_SHA::8}
 
       - name : Push Docker Image to Docker Hub
         run : docker push ${{secrets.DOCKER_USERNAME}}/docker:${GITHUB_SHA::8}
