@@ -12,7 +12,7 @@ import java.util.Arrays;
 @SpringBootApplication
 public class TestApplication {
 	static String test() {
-		String token = "343eaf0e-5d2f-4488-8879-4996f161cf11";
+		String token = ${{secrets.token}} ;
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
 		headers.set("X-CMC_PRO_API_KEY", "Bearer" + token);
